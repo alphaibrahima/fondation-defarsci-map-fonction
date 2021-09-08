@@ -27,12 +27,12 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => 'dev-main',
-    'version' => 'dev-main',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => '42c2f48a3890826c8be2de42a1379c2209ff2e79',
+    'reference' => '8a6537e8bc711f74c4b31f17a45a7f6ed85de0f1',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -104,6 +104,15 @@ private static $installed = array (
       array (
       ),
       'reference' => 'e864bbf5904cb8f5bb334f99209b48018522f042',
+    ),
+    'dompdf/dompdf' => 
+    array (
+      'pretty_version' => 'v1.0.2',
+      'version' => '1.0.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8768448244967a46d6e67b891d30878e0e15d25c',
     ),
     'dragonmantank/cron-expression' => 
     array (
@@ -455,6 +464,15 @@ private static $installed = array (
         0 => '*',
       ),
     ),
+    'laravel/cashier' => 
+    array (
+      'pretty_version' => 'v13.5.1',
+      'version' => '13.5.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'ddb8311db517b6268d7b2497c95075afb6f40989',
+    ),
     'laravel/framework' => 
     array (
       'pretty_version' => 'v8.58.0',
@@ -466,12 +484,12 @@ private static $installed = array (
     ),
     'laravel/laravel' => 
     array (
-      'pretty_version' => 'dev-main',
-      'version' => 'dev-main',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => '42c2f48a3890826c8be2de42a1379c2209ff2e79',
+      'reference' => '8a6537e8bc711f74c4b31f17a45a7f6ed85de0f1',
     ),
     'laravel/sail' => 
     array (
@@ -544,6 +562,15 @@ private static $installed = array (
       array (
       ),
       'reference' => 'd1339f64479af1bee0e82a0413813fe5345a54ea',
+    ),
+    'moneyphp/money' => 
+    array (
+      'pretty_version' => 'v3.3.1',
+      'version' => '3.3.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '122664c2621a95180a13c1ac81fea1d2ef20781e',
     ),
     'monolog/monolog' => 
     array (
@@ -645,6 +672,24 @@ private static $installed = array (
       array (
       ),
       'reference' => 'bae7c545bef187884426f042434e561ab1ddb182',
+    ),
+    'phenx/php-font-lib' => 
+    array (
+      'pretty_version' => '0.5.2',
+      'version' => '0.5.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'ca6ad461f032145fff5971b5985e5af9e7fa88d8',
+    ),
+    'phenx/php-svg-lib' => 
+    array (
+      'pretty_version' => 'v0.3.3',
+      'version' => '0.3.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '5fa61b65e612ce1ae15f69b3d223cb14ecc60e32',
     ),
     'phpdocumentor/reflection-common' => 
     array (
@@ -894,6 +939,15 @@ private static $installed = array (
         0 => '4.2.1',
       ),
     ),
+    'sabberworm/php-css-parser' => 
+    array (
+      'pretty_version' => '8.3.1',
+      'version' => '8.3.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'd217848e1396ef962fb1997cf3e2421acba7f796',
+    ),
     'sebastian/cli-parser' => 
     array (
       'pretty_version' => '1.0.1',
@@ -1038,6 +1092,15 @@ private static $installed = array (
       ),
       'reference' => 'c6c1022351a901512170118436c764e473f6de8c',
     ),
+    'stripe/stripe-php' => 
+    array (
+      'pretty_version' => 'v7.95.0',
+      'version' => '7.95.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'ed372a1f6430b06dda408bb33b27d2be35ceaf07',
+    ),
     'swiftmailer/swiftmailer' => 
     array (
       'pretty_version' => 'v6.2.7',
@@ -1179,6 +1242,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '16880ba9c5ebe3642d1995ab866db29270b36535',
+    ),
+    'symfony/polyfill-intl-icu' => 
+    array (
+      'pretty_version' => 'v1.23.0',
+      'version' => '1.23.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '4a80a521d6176870b6445cfb469c130f9cae1dda',
     ),
     'symfony/polyfill-intl-idn' => 
     array (

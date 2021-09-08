@@ -40,7 +40,9 @@
 
             <td style="display: flex">
                 <div>
-                    <a class="btn btn-primary mr-2" href="">Contribuer</a>
+                    <a class="btn btn-primary mr-2" href="{{ url('/projetlisteContribuez/contibution/'.$post->id) }}">
+                        Contribuer 
+                    </a>
                 </div>
             </td>
 
