@@ -12,8 +12,8 @@
             <div class="pull-left text-center mb-2">
                 <h2>Formulaire - De Declaration Probleme</h2>
             </div>
-            <div class="pull-right text-center">
-                <a class="text-primary" href="{{ route('problemes.index') }}"> Liste Des Problemes</a>
+            <div class="pull-right text-center mb-4">
+                <a class="hover " href="{{ route('problemes.index') }}"> Liste Des Problemes</a>
             </div>
 
             @if(session('status'))
@@ -29,7 +29,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-6">
                     <div class="form-group">
                         <strong>Nom :</strong>
-                        <input type="text" name="nom" class="form-control" placeholder="Nom">
+                        <input type="text" name="nom" class="form-control" >
                     @error('nom')
                         <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                     @enderror
@@ -39,7 +39,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-6">
                     <div class="form-group">
                         <strong>Prenom :</strong>
-                        <input type="text" name="prenom" class="form-control" placeholder="Prenom">
+                        <input type="text" name="prenom" class="form-control" >
                     @error('prenom')
                         <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                     @enderror
@@ -50,7 +50,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-6">
                     <div class="form-group">
                         <strong>Telephone :</strong>
-                        <input type="text" name="tel" class="form-control" placeholder="Telephone">
+                        <input type="text" name="tel" class="form-control" >
                         @error('tel')
                         <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                         @enderror
@@ -60,7 +60,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-6">
                     <div class="form-group">
                         <strong>Email :</strong>
-                        <input type="text" name="email" class="form-control" placeholder="Email">
+                        <input type="text" name="email" class="form-control" >
                     @error('email')
                         <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                     @enderror
@@ -70,7 +70,7 @@
             <div class="col-xs-12 col-sm-6 col-md-6">
                     <div class="form-group">
                         <strong>Lieu :</strong>
-                        <input type="text" name="lieu" class="form-control" placeholder="Nom Du Lieu">
+                        <input type="text" name="lieu" class="form-control" >
                     @error('lieu')
                         <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                     @enderror
@@ -80,7 +80,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-6">
                     <div class="form-group">
                         <strong>Lien Avec Le Lieu :</strong>
-                        <input type="text" name="lien_avec_lieu" class="form-control" placeholder="Lien Avec LE lieux">
+                        <input type="text" name="lien_avec_lieu" class="form-control" >
                     @error('lien_avec_lieu')
                         <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                     @enderror
@@ -90,7 +90,7 @@
             <div class="col-xs-12 col-sm-6 col-md-6">
                     <div class="form-group">
                         <strong>Profession :</strong>
-                        <input type="text" name="profession" class="form-control" placeholder="Profession">
+                        <input type="text" name="profession" class="form-control" >
                     @error('profession')
                         <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                     @enderror
@@ -100,7 +100,7 @@
             <div class="col-xs-12 col-sm-6 col-md-6">
                 <div class="form-group">
                     <strong>Nombre Population :</strong>
-                    <input type="text" name="nbre_population" class="form-control" placeholder="Nombre d’habitants">
+                    <input type="text" name="nbre_population" class="form-control" >
                     @error('nbre_population')
                         <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                     @enderror
@@ -110,7 +110,7 @@
             <div class="col-xs-12 col-sm-5 col-md-5">
                 <div class="form-group">
                     <strong>Latitude :</strong>
-                    <input type="text" name="latitude" id="latitude" class="form-control" placeholder="Latitude">
+                    <input type="text" name="latitude" id="latitude" class="form-control" >
                     @error('Localisation')
                         <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                     @enderror
@@ -119,14 +119,14 @@
             <div class="col-xs-12 col-sm-5 col-md-5">
                 <div class="form-group">
                     <strong>Longitude :</strong>
-                    <input type="text" name="long" id="longitude" class="form-control" placeholder="Longitude">
+                    <input type="text" name="long" id="longitude" class="form-control" >
                     @error('Localisation')
                         <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                     @enderror
                 </div>
             </div>
             <div class="col-xs-12 col-sm-2 col-md-2 mt-3">
-                <a class="btn btn-danger mt-1" id="get-location" style="border-radius: 25%;">
+                <a class="btn btn-outline-danger mt-1" id="get-location" style="border-radius: 25%;">
                   <i class="fas fa-map-marker-plus" style="font-size: 30px; "></i>
                 </a>
             </div>
@@ -134,7 +134,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Details :</strong>
-                    <textarea class="form-control" style="height:150px" name="details" placeholder="Plus de details"></textarea>
+                    <textarea class="form-control" style="height:150px" name="details" ></textarea>
                     @error('details')
                     <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                     @enderror

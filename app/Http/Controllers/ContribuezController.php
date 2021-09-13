@@ -23,34 +23,66 @@ class ContribuezController extends Controller
     }
 
 
-    public function contribution(Request $request)
-    {
-        Stripe::setApiKey('pr_test');
-        try{
-            $charge = Charge::create(array(
-                "amount" => $request-> total * 100,
-                "currency" => "GBP",
-                "source" => "tok_mastercard",
-                "description" => "Test charge",
-            ));
-        }catch(\Exeption $e) {
-             return "ok";
-         }
+    // public function contribution(Request $request)
+    // {
+    //     Stripe::setApiKey('pr_test');
+    //     try{
+    //         $charge = Charge::create(array(
+    //             "amount" => $request-> total * 100,
+    //             "currency" => "GBP",
+    //             "source" => "tok_mastercard",
+    //             "description" => "Test charge",
+    //         ));
+    //     }catch(\Exeption $e) {
+    //          return "ok";
+    //      }
       
-    }
+    // }
 
     // partie ou on contribue
     public function participation(Request $request, $projet)
     {
-        // $authed_user = auth()->user();
+        return view('contribuez.participate');
 
-        $post = Projet::find($projet);
+    }
+
+    // partie traiment de la participation
+    public function participationStore(Request $request )
+    {
+          
+        Stripe::setApiKey('sk_test_51JUagXA0Pqxe87f51KuqT8dXF8scxs37veYFkvMiDZKJ3JaFmRSnfl0AixFksh1NjCwGyxmY3g8AVVjRH9iQkWTw009FP4S1zZ');
+        // $post = Projet::find($projet);
         $montant = $request->montant;
         $payment_method = $request->payment_method;
-        // $authed_user->charge($montant, $payment_method );
-        $charge = Charge::create($montant, $payment_method);
-        return view('contribuez.participate', compact('post'));
-        // dd($post);
+           
+        
+        // dd($payment_method);
+        $charges =;
     
+        try {
+            // $charges = Charge::create(array(
+            //     "amount" => $request->montant * 100,
+            //     "currency" => "usd",
+            //     "source" => $payment_method,
+            //     // "source" => $token,
+            //     "description" => "Test Charges"
+            // ));
+
+            $charges->charge($montant, $payment_method);
+        }catch(\Exeption $e) {
+            return "ok";
+        }
+            
+    
+        // fin test
+      
+        // $authed_user->charge($montant, $payment_method );
+        // $charge = Charge::create($montant, $payment_method);
+        // dd(config('services.stripe.secret_key'));
+        // return redirect()->route('contribuez.participate');
+        return redirect('contribuez.index')
+        ->with('success','Mise à jour Reussi');
+
+        
     }
 }

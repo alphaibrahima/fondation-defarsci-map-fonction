@@ -26,8 +26,8 @@
             </div>
         @endif
         
-        <form action="{{ url('/ajout-projet') }}" method="POST" enctype="multipart/form-data">
-            @csrf
+        <form action="{{ url('/participation') }}" method="POST" enctype="multipart/form-data">
+             @csrf
         
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12">

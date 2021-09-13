@@ -432,3 +432,23 @@
 /* fin du config version tablette */
 
 /* fin du config responsivite */
+
+/* arrondir les objets */
+.arrondi
+{
+    border-radius: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+/* fin de l'arrondi */
+
+.hover:hover
+{
+    background-color: #FF6600;
+    color: #fff;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-size: 15px;
+    font-weight: 600;
+    
+}

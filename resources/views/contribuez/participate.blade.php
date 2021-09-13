@@ -11,7 +11,7 @@
 
         <div class="col-md-8">
 
-            <form id="form">
+            <form id="form" action="{{ url('participation') }}" method="POST">
 
                 @csrf
 

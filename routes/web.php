@@ -46,8 +46,9 @@ Route::put('/edit-projet/{projet}', [ProjetCrudController::class, 'update']);
 Route::delete('/sup-projet/{projet}', [ProjetCrudController::class, 'delete']);
 
 Route::get('/projetlisteContribuez', [ContribuezController::class, 'index']);
-Route::get('/projetlisteContribuez/details/{projet}', [ContribuezController::class, 'details']);
+Route::get('/projetlisteContribuez/details', [ContribuezController::class, 'details']);
 Route::get('/projetlisteContribuez/contibution/{projet}', [ContribuezController::class, 'participation']);
+Route::post('/participation', [ContribuezController::class, 'participationStore']);
 
 
 

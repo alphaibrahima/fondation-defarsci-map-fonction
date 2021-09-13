@@ -17,7 +17,7 @@
     <!-- fontAwsome -->
     <link rel="stylesheet" href="{{asset('css/icomoon/style.css')}}">
     <link rel="stylesheet" href=" {{asset('css/style2.css')}} ">
-    <link rel="stylesheet" href=" {{asset('css/style3.css')}} ">
+    <link rel="stylesheet" href=" {{asset('css/menu.css')}} ">
     
 
     @yield('style')
