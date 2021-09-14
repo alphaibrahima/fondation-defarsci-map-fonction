@@ -50,14 +50,14 @@ class ContribuezController extends Controller
     public function participationStore(Request $request )
     {
           
-        Stripe::setApiKey('sk_test_51JUagXA0Pqxe87f51KuqT8dXF8scxs37veYFkvMiDZKJ3JaFmRSnfl0AixFksh1NjCwGyxmY3g8AVVjRH9iQkWTw009FP4S1zZ');
+        $token=Stripe::setApiKey('sk_test_51JUagXA0Pqxe87f51KuqT8dXF8scxs37veYFkvMiDZKJ3JaFmRSnfl0AixFksh1NjCwGyxmY3g8AVVjRH9iQkWTw009FP4S1zZ');
         // $post = Projet::find($projet);
         $montant = $request->montant;
         $payment_method = $request->payment_method;
            
         
         // dd($payment_method);
-        $charges =;
+        
     
         try {
             // $charges = Charge::create(array(
@@ -68,7 +68,14 @@ class ContribuezController extends Controller
             //     "description" => "Test Charges"
             // ));
 
-            $charges->charge($montant, $payment_method);
+            
+            $intent = \Stripe\PaymentIntent::create([
+                'setup_future_usage' => 'off_session',
+                'amount' =>$request->montant * 100,
+                'currency' => 'usd',
+                "source" =>$token,
+            ]);
+
         }catch(\Exeption $e) {
             return "ok";
         }
@@ -79,9 +86,9 @@ class ContribuezController extends Controller
         // $authed_user->charge($montant, $payment_method );
         // $charge = Charge::create($montant, $payment_method);
         // dd(config('services.stripe.secret_key'));
-        // return redirect()->route('contribuez.participate');
-        return redirect('contribuez.index')
-        ->with('success','Mise à jour Reussi');
+        
+        return redirect('/');
+        // ->with('success','Mise à jour Reussi');
 
         
     }

@@ -16,7 +16,7 @@
                 @csrf
 
                 <input type="hidden" name="payment_method" id="payment_method">
-                <input type="number" name="montant"class="form-control my-2" id="montant" placeholder="Montant">
+                <input type="text" name="montant"class="form-control my-2" id="montant" placeholder="Montant">
                 <div id="card-element"></div>
 
                 <button type="submit" class="btn btn-success"  id="submit-button">
@@ -29,6 +29,8 @@
         <div class="col-md-2"></div>
     </div>
 </div>
+
+
 
 
 @endsection
