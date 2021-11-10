@@ -46,8 +46,9 @@
                             <div class="form-group">
                                 <strong>Probleme</strong>
                                 <select class="form-control" name="probleme_id">
+                                <option value="{{$projet->probleme->id}}" selected >{{$projet->probleme->lieu}}</option>
                                     @foreach ($problemes as $item)
-                                        <option value="{{$item->id}}">{{$item->lieu}}</option>
+                                        <option value="{{$item->id}}"  >{{$item->lieu}}</option>
                                     @endforeach
                                 </select>
                             </div>
@@ -56,7 +57,7 @@
                         <div class="col-xs-12 col-sm-12 col-md-12">
                             <div class="form-group">
                                 <strong>Description :</strong>
-                                <textarea class="form-control" style="height:150px" name="description" placeholder="Post Description">{{ $projet->description }}</textarea>
+                                <textarea class="form-control" style="height:150px" name="description" placeholder="Post Description">{{$projet->description}}</textarea>
                                 @error('description')
                                 <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                                 @enderror

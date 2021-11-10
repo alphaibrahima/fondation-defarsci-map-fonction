@@ -61,6 +61,7 @@ class ProjetCrudController extends Controller
         ]);
         
         $post = Projet::find($projet);
+
         if($request->hasFile('image')){
             $request->validate([
               'image' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
@@ -68,6 +69,7 @@ class ProjetCrudController extends Controller
             $path = $request->file('image')->store('public/images');
             $post->image = $path;
         }
+        
         $post->name        = $request->title;
         $post->status      = $request->status;
         $post->description = $request->description;
