@@ -7,11 +7,12 @@
 <style type="text/css">
     body {
       overflow-x: hidden; 
+      height:100%;
     }
   
     #map {
-      height: 700px;
-      width: 100%;
+      height:700px;
+      width: 100%;  
     }
 </style>
 @endsection

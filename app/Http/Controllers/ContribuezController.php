@@ -16,9 +16,10 @@ class ContribuezController extends Controller
     }
 
     //  Voir les details d'un projet
-    public function details($details)
+    public function details(Request $request, $details)
     {
         $detail = Projet::find($details);
+        // dd($detail);
         return view('contribuez.detail', compact('detail'));
     }
 
