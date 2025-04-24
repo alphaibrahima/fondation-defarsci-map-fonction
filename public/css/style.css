@@ -1,0 +1,42 @@
+body
+{
+    padding: 0;
+    margin: 0;
+}
+.carousel-inner .carousel-item .row 
+{
+    padding: 0;
+    margin: 0;
+}
+.carousel-inner .carousel-item .row .col-5 h3
+{
+    color: blue;
+    font-size: 35;
+    font-weight: 700;
+    text-align: center;
+}
+
+.carousel-inner .carousel-item .row .col-5 p
+{
+    text-align: center;
+
+}
+
+.carousel-inner .carousel-item .row .col-5
+{
+    margin-top: 80px;
+}
+
+.carousel-inner .carousel-item .row .col-7 img
+{
+    height : 400px;
+    width  : 100%;
+    object-fit: cover;
+}
+
+.qsn 
+{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}

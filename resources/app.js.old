@@ -1,0 +1,116 @@
+require('./bootstrap');
+
+// window.Vue = require('vue').default;
+// Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+
+
+// import * as VueGoogleMaps from 'vue2-google-maps';
+
+// Vue.use(VueGoogleMaps, {
+//     load: {
+//         key: ''
+//     }
+// });
+
+
+// const app = new Vue({
+//     el: '#app',
+//     data(){
+//         return{
+//             projets : [],
+
+//             // infowindowoption
+//             infoWindowOptions: {
+//                 pixelOffset: {
+//                     width: 0,
+//                     height: -35
+//                 }
+//             },
+
+//             activeProjet: {},
+
+//             // infoWindowOpened
+//             infoWindowOpened: false
+//         }
+//     },
+//     created() {
+//         axios.get('/api/projets')
+//             
+//             .then((response) => this.projets = response.data)
+//             .catch((error) => console.error(error));
+
+            
+//     },
+//     methods: {
+//         getPosition(r) {
+//             return {
+//                 lat: parseFloat(r.latitude),
+//                 lng: parseFloat(r.longitude)
+
+//                 // lat: parseFloat(r.probleme.latitude),
+//                 // lng: parseFloat(r.probleme.longitude)
+//             }
+//         }, 
+
+//         handleMarkerClicked(r) {
+//             this.activeProjet = r;
+//             this.infoWindowOpened = true;
+//         },
+
+//         handleInfoWindowClose() {
+//             this.activeProjet = {};
+//             this.infoWindowOpened = false;
+//         },
+        
+
+//         // pour permettre à l'utilisateur de creer directement un markerv via la carte 
+//         // handleMapClick(e) {
+//         //     this.projets.push({
+//         //         name: "Placeholder",
+//         //         hours: "00:00am-00:00pm",
+//         //         city: "Orlando",
+//         //         state: "FL",
+//         //         latitude: e.latLng.lat(),
+//         //         longitude: e.latLng.lng()
+//         //     });
+//         // }
+
+
+
+
+//         },
+
+//         computed: {
+//             mapCenter() {
+//                 if (!this.projets.length) {
+//                     return {
+//                         // lat: 14,
+//                         // lng: -17
+//                         lat: 10,
+//                         lng: 10
+//                     }
+//                 }
+
+
+        
+    
+//                 return {
+//                     // lat: parseFloat(this.projets['probleme'][0].latitude),
+//                     // lng: parseFloat(this.projets['probleme'][0].longitude)
+//                     lat: parseFloat(this.projets[0].latitude),
+//                     lng: parseFloat(this.projets[0].longitude)
+//                 }
+//             },
+
+//             // infowindowPosition
+//             infoWindowPosition(){
+//                 return {
+//                     lat: parseFloat(this.activeProjet.probleme.latitude),
+//                     lng: parseFloat(this.activeProjet.probleme.longitude),
+//                     // lat: parseFloat(this.activeProjet.latitude),
+//                     // lng: parseFloat(this.activeProjet.longitude),
+//                 };
+//              },
+      
+//         }
+// });
